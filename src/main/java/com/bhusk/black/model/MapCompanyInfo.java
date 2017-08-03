@@ -1,6 +1,7 @@
 package com.bhusk.black.model;
 
 /**
+ * 移动端自适应
  * Created by kzyuan on 2017/7/10.
  */
 public class MapCompanyInfo {
@@ -17,6 +18,11 @@ public class MapCompanyInfo {
      * 备注
      */
     private String remarks;
+    /**
+     * 是否可用
+     * Y OR N
+     * 是或否
+     */
     private String enable;
 
     /**

@@ -25,6 +25,8 @@ public class Page  {
 
     /**
      * 是否可用
+     * Y OR N
+     * 是或否
      */
     private String enable;
 

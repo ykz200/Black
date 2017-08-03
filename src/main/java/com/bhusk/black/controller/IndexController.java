@@ -34,7 +34,7 @@ public class IndexController {
     private PageService pageService;
 
     /**
-     * 主页信息
+     * PC端主页信息
      *
      * @param companyInfo
      * @return
@@ -118,7 +118,7 @@ public class IndexController {
     }
 
     /**
-     * 共同的配置信息
+     * PC端 共同的配置信息
      * @param result
      * @return
      */

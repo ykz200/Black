@@ -5,7 +5,6 @@ import com.bhusk.black.model.MapCompanyInfo;
 import com.bhusk.black.model.Page;
 import com.bhusk.black.service.InfoService;
 import com.bhusk.black.service.PageService;
-import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.StringUtils;
@@ -17,6 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 移动端页面查询类
  * Created by kzyuan on 2017/7/10.
  */
 @Controller
@@ -58,7 +58,7 @@ public class MapIndexController {
     }
 
     /**
-     * 搜索信息
+     * 移动端 查询公告 #暂时不用#
      *
      * @param mapCompanyInfo
      * @param common
@@ -85,7 +85,7 @@ public class MapIndexController {
     }
 
     /**
-     * 共同的配置信息
+     * 公告页面 共同的配置信息
      *
      * @param result
      * @return

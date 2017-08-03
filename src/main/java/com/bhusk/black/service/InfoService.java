@@ -19,6 +19,11 @@ public class InfoService {
     @Autowired
     private InfoMapper infoMapper;
 
+    /**
+     * 查询所有数据
+     * @param info
+     * @return
+     */
     public List<CompanyInfo> getAll(CompanyInfo info) {
         if (info.getPage() != null && info.getRows() != null) {
             PageHelper.startPage(info.getPage(), info.getRows());

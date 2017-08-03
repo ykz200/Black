@@ -19,6 +19,11 @@ public class CompanyInfo extends BaseEntity  {
      * 备注
      */
     private String remarks;
+    /**
+     * 是否可用
+     * Y OR N
+     * 是或否
+     */
     private String enable;
 
     @Override

@@ -7,7 +7,7 @@ logging:
         tk.mybatis: TRACE
 
 druid:
-    url: jdbc:mysql://103.45.8.122:3306/blacklist?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://103.45.8.122:3306/Black?useUnicode=true&characterEncoding=utf-8
     username: black
     password: blacklist
     initial-size: 1

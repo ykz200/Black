@@ -1,7 +1,5 @@
 package com.bhusk.black.controller;
 
-import com.bhusk.black.model.CompanyInfo;
-import com.bhusk.black.model.MapCompanyInfo;
 import com.bhusk.black.model.Notice;
 import com.bhusk.black.model.Page;
 import com.bhusk.black.service.NoticeService;
@@ -16,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 /**
+ * 公告展示类
  * Created by kzyuan on 2017/7/10.
  */
 @Controller
@@ -28,7 +27,7 @@ public class NoticeController {
     private PageService pageService;
 
     /**
-     * 公告list信息
+     * 公告展示信息
      *
      * @param notice
      * @return
@@ -63,7 +62,7 @@ public class NoticeController {
     }
 
     /**
-     * 共同的配置信息
+     * 公告页面 共同的配置信息
      *
      * @param result
      * @return

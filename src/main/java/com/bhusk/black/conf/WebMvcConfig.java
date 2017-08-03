@@ -22,7 +22,7 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     }
 
     /**
-     * 异常页面处理
+     * 错误页面处理
      * @return
      */
     @Bean

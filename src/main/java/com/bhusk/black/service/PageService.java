@@ -15,7 +15,7 @@ public class PageService {
     private PageMapper pageMapper;
 
     /**
-     * 获取配置参数
+     * 获取配置参数内容
      * @param page
      * @return
      */

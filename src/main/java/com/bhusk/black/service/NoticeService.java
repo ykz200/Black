@@ -20,7 +20,7 @@ public class NoticeService {
     private NoticeMapper noticeMapper;
 
     /**
-     * 所有公告
+     * 查询所有公告
      * @param notice
      * @return
      */
@@ -32,7 +32,7 @@ public class NoticeService {
     }
 
     /**
-     * 详细公告
+     * 详细公告 #暂时不用#
      * @param notice
      * @return
      */

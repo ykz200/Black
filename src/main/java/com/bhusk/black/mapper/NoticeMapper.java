@@ -9,6 +9,5 @@ import java.util.List;
  */
 public interface NoticeMapper {
     List<Notice> getNoticeAll(Notice notice);
-
     Notice getNoticeDetail(Notice notice);
 }
