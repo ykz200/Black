@@ -1,0 +1,20 @@
+@mixin border-1px($color){
+	position:relative;
+	&:after{
+		display: block;
+		width: 100%;
+		position:absolute;
+		background: $color!important;
+		left: 0;
+		bottom: 0;
+		border-top:1px solid $color!important;
+		content: '';
+	}
+}
+
+@mixin border-none(){
+	&:after{
+		display: none;
+	}
+}
+

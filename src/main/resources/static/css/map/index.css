@@ -1,0 +1,252 @@
+html,body{
+	width: 100%;
+	font-family: "微软雅黑";
+	font-size: 1em;
+	background: #1f2126;
+	color: #c2b483;
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/*index.html*/
+.main_div{
+	width: 100%;
+}
+.top_div{
+	width: 100%;
+	background: #050c1e;
+	border-top: 1px solid #050C1E;
+	border-bottom: 1px solid #050C1E;
+	border-image: url(../img/line.png) 1 1 1 1;
+	overflow: hidden;
+}
+.logo{
+	width: 40%;
+	margin: 10px auto;
+}
+.top_text{
+	font-size: 1.2em;
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+.bottom_div{
+	width: 100%;
+}
+.bottom_text{
+	text-align: center;
+	font-size: 1em;
+	margin-top: 15px;
+}
+.park_action{
+	width: 100%;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.add_park{
+	width: 42.5%;
+	margin-left: 5%;
+	line-height: 40px;
+	font-size: 1.3em;
+	color: #C2B483;
+	text-align: center;
+	float: left;
+	border: 1px solid #C2B483;
+	border-radius: 5px;
+}
+.del_park{
+	width: 42.5%;
+	margin-right: 5%;
+	line-height: 40px;
+	font-size: 1.3em;
+	color: #C2B483;
+	text-align: center;
+	float: right;
+	border: 1px solid #C2B483;
+	border-radius: 5px;
+}
+.car_list{
+	width: 100%;
+	overflow: hidden;
+}
+.car_name:nth-child(odd){
+	width: 42.5%;
+	margin-left: 5%;
+	margin-top: 20px;
+	line-height: 40px;
+	font-size: 1.3em;
+	text-align: center;
+	float: left;
+	border: 1px solid #C2B483;
+	border-radius: 5px;
+}
+.car_name:nth-child(even){
+	width: 42.5%;
+	margin-right: 5%;
+	margin-top: 20px;
+	line-height: 40px;
+	font-size: 1.3em;
+	text-align: center;
+	float: right;
+	border: 1px solid #C2B483;
+	border-radius: 5px;
+}
+.park_record{
+	width: 90%;
+	margin: 20px auto;
+	background: #C2B483;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 40px;
+	color: #1F2126;
+	border-radius: 5px;
+}
+/*add_park.html*/
+.car_input{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	background: #050C1E;
+	border: 1px solid #C2B483;
+	border-radius: 5px;
+}
+.car_input input{
+	width: 100%;
+	line-height: 40px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 1.2em;
+	color: #C2B483;
+	background: #050C1E;
+	-webkit-appearance: none;
+	text-transform: uppercase;
+}
+.next_step{
+	width: 90%;
+	margin: 40px auto;
+	background: #C2B483;
+	font-size: 1.2em;
+	text-align: center;
+	line-height: 40px;
+	color: #1F2126;
+	border-radius: 5px;
+}
+#word{
+	background: #1F2126;
+}
+option{
+	background: #1F2126;
+}
+/*del_park.html*/
+.del_text{
+	text-align: center;
+	font-size: 1em;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+/*pay_park.html*/
+.pay_main_div{
+	width: 100%;
+}
+.top_car_name{
+	width: 95%;
+	background: #050C1E;
+	line-height: 60px;
+	padding-left: 5%;
+}
+.pay_car_name{
+	font-size: 1.1em;
+}
+.count_pay,.discount,.select_time{
+	width:100%;
+	line-height: 30px;
+	background: #1f2126;
+}
+.need_pay,.park_time{
+	width:100%;
+	line-height: 30px;
+	background: #050C1E;
+}
+.info_title{
+	width: 40%;
+	line-height: 35px;
+	padding-left: 5%;
+	float: left;
+}
+.info_text{
+	width: 50%;
+	line-height: 35px;
+	padding-right: 5%;
+	text-align: right;
+	float: right;
+}
+.pay_submit{
+	width: 90%;
+	margin: 80px auto;
+	line-height: 40px;
+	text-align: center;
+	background: #C2B483;
+	color: #1F2126;
+	border: 1px solid #C2B483;
+	border-radius: 5px;
+}
+/*park_record.html*/
+.record_list{
+	width: 100%;
+	margin-top: 20px;
+}
+.record_info{
+	width: 94%;
+	margin: 0 auto;
+	border: 1px solid #C2B483;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.record_title{
+	width: 100%;
+	background: #C2B483;
+	color: #1F2126;
+	line-height: 40px;
+	overflow: hidden;
+}
+.record_car_name{
+	width: 45%;
+	margin-left: 5%;
+	float: left;
+}
+.record_date{
+	width: 45%;
+	text-align: right;
+	float: left;
+}
+.record_detail{
+	width: 100%;
+}
+.detail_li{
+	width: 95%;
+	padding-left: 5%;
+	line-height: 30px;
+}
+.last_pay{
+	font-weight: bold;
+}
+.pay_record_action{
+	width: 100%;
+	margin-top: 30px;
+}
+.before_page,.next_page{
+	width: 42.5%;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	background: #C2B483;
+	color: #1F2126;
+	margin-left: 5%;
+	border-radius: 5px;
+}

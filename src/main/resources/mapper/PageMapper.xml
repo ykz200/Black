@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bhusk.black.mapper.PageMapper">
+
+    <select id="getPage" parameterType="com.bhusk.black.model.Page" resultType="com.bhusk.black.model.Page">
+        select
+        id,
+        pageName,
+        pageValue,
+        remarks,
+        enable
+        from page
+        where 1 = 1
+        and enable = 'Y'
+        <if test="pageName != null ">
+            and pageName = #{pageName}
+        </if>
+        ORDER BY ID DESC
+    </select>
+
+
+</mapper>

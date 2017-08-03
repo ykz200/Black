@@ -1,0 +1,31 @@
+@media (-webkit-min-device-pixel-ratio:1.5),(min-device-pixel-ratio:1.5){
+	.border-1px{
+		&::after{
+			@include scaleY(0.65);
+		}
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2){
+	.border-1px{
+		&::after{
+			@include scaleY(0.5);
+		}
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio:2.5),(min-device-pixel-ratio:2.5){
+	.border-1px{
+		&::after{
+			@include scaleY(0.4);
+		}
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3){
+	.border-1px{
+		&::after{
+			@include scaleY(0.33);
+		}
+	}
+}
