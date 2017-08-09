@@ -58,7 +58,7 @@ public class MapIndexController {
     }
 
     /**
-     * 移动端 查询公告 #暂时不用#
+     * 移动端 模糊查询
      *
      * @param mapCompanyInfo
      * @param common
@@ -79,13 +79,13 @@ public class MapIndexController {
          */
         result = this.CommonPage(result);
         List<CompanyInfo> companyInfoList = infoService.mapIndexSearch(mapCompanyInfo);
-        result.addObject("pageInfo", companyInfoList);
+        result.addObject("pageInfo", (companyInfoList.size() != 0) ? companyInfoList: null);
         result.addObject("common", common);
         return result;
     }
 
     /**
-     * 公告页面 共同的配置信息
+     * 移动端黑企业查询页面 共同的配置信息
      *
      * @param result
      * @return
@@ -134,6 +134,8 @@ public class MapIndexController {
 
         footer.setPageName("footer_advertising_index_map");
         result.addObject("footer_advertising_index_map", pageService.getPage(footer));
+
+
         return result;
 
     }

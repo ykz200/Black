@@ -1,0 +1,40 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, small, strong, dl, dt, dd, ol, ul, li {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+em, strong, i {
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+body {
+  line-height: 1;
+  font-size: 14px;
+  /*font-family: "Microsoft Yahei";*/
+  font-family: "helvetica neue",arial,sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+ul, ol {
+  list-style: none;
+}
+a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  color: #9A0000;
+  text-decoration: underline;
+}
+input, button {
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+}
+img {
+  vertical-align: top;
+}

@@ -112,8 +112,8 @@
     </div>
 </div>
 </div>
-
-<#if pageInfo??>
+<div align="center">
+<#if pageInfo ??>
 
 <table>
     <thead>
@@ -133,9 +133,10 @@
         </#list>
     </tbody>
 </table>
-
+<#else >
+    道歉，暂无这家公司黑企相关信息~ 如果这家公司有黑企性质 请<b><span onclick="{window.location.href='mailto:keshu@bhusk.com'}" style="color: orangered;cursor:pointer;">举报</span></b> ,我们会进行收录!
 </#if>
-
+</div>
 <div name="footer" style="width: 100%;text-align: center;margin: 30px auto;">
 <#if footer_map.pageValue??>${footer_map.pageValue}</#if>
 </div>

@@ -99,6 +99,8 @@ public class NoticeController {
         footer.setPageName("header_notice");
         result.addObject("header_notice", pageService.getPage(footer));
 
+        footer.setPageName("footer_pc");
+        result.addObject("footer_pc", pageService.getPage(footer));
         return result;
 
     }

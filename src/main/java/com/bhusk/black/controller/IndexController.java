@@ -110,7 +110,7 @@ public class IndexController {
          */
         result = this.CommonPage(result);
         List<CompanyInfo> companyInfoList = infoService.getAll(companyInfo);
-        result.addObject("pageInfo", new PageInfo<CompanyInfo>(companyInfoList));
+        result.addObject("pageInfo", (companyInfoList.size() != 0) ? new PageInfo<CompanyInfo>(companyInfoList): new PageInfo<CompanyInfo>(null));
         result.addObject("userInfo", companyInfo);
         result.addObject("page", companyInfo.getPage());
         result.addObject("rows", companyInfo.getRows());

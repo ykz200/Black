@@ -6,7 +6,7 @@
 
   <groupId>com.bhusk.black</groupId>
   <artifactId>Black</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>2.0.0</version>
   <name>Black</name>
   <url>http://maven.apache.org</url>
   <packaging>jar</packaging>

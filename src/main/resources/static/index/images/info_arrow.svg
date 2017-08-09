@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="78px" viewBox="0 0 14 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.2 (9961) - http://www.bohemiancoding.com/sketch -->
+    <title>info_tra</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="未登录" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="slice" sketch:type="MSArtboardGroup" transform="translate(-383.000000, -446.000000)">
+            <path d="M397,446.263456 L383,460.263456 L397,474.263456 L397,446.263456 Z" id="Rectangle-177" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M397.142136,451 L388,460.142136 L397.142136,469.284271 L397.142136,451 Z" id="Rectangle-175" fill="#F8F8F8" sketch:type="MSShapeGroup"></path>
+            <g id="Rectangle-178-+-Rectangle-176" sketch:type="MSLayerGroup" transform="translate(389.500000, 510.500000) scale(-1, 1) translate(-389.500000, -510.500000) translate(382.000000, 496.000000)">
+                <path d="M14,0.263455967 L1.77635684e-14,14.263456 L14,28.263456 L14,0.263455967 Z" id="Rectangle-178" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                <path d="M14.1421356,5 L5,14.1421356 L14.1421356,23.2842712 L14.1421356,5 Z" id="Rectangle-176" fill="#F8F8F8" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
