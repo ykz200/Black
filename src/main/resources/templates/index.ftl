@@ -246,31 +246,31 @@
 <div class="main" id="main">
     <div class="main-inner">
         <div style="height: 40px;"></div>
-        <div class="main-list" align="center">
-        <#if pageInfo.list ??>
-            <table>
-                <thead>
+    <div class="main-list" align="center">
+    <#if pageInfo.list ??>
+        <table>
+            <thead>
+            <tr>
+                <td>单位名称</td>
+                <td>地址</td>
+                <td>备注</td>
+            </tr>
+            </thead>
+            <tbody>
+
+                <#list pageInfo.list as ci>
                 <tr>
-                    <td>单位名称</td>
-                    <td>地址</td>
-                    <td>备注</td>
+                    <td>${ci.companyName}</td>
+                    <td>${ci.position}</td>
+                    <td>${ci.remarks}</td>
                 </tr>
-                </thead>
-                <tbody>
+                </#list>
+            </tbody>
+        </table>
 
-                    <#list pageInfo.list as ci>
-                    <tr>
-                        <td>${ci.companyName}</td>
-                        <td>${ci.position}</td>
-                        <td>${ci.remarks}</td>
-                    </tr>
-                    </#list>
-                </tbody>
-            </table>
-
-            <!-- pagehelper 分页插件-->
-            <div style="text-align: center; margin-top: 50px;">
-                <ul class="pagination">
+        <!-- pagehelper 分页插件-->
+        <div style="text-align: center; margin-top: 50px;">
+            <ul class="pagination">
                 <#if pageInfo.hasPreviousPage>
                     <li><a onclick="searchFrom(1,${pageInfo.pageSize})" href="#">首页</a></li>
                     <li><a onclick="searchFrom(${pageInfo.prePage},${pageInfo.pageSize})" href="#">«</a></li>
@@ -293,14 +293,14 @@
                         <a onclick="searchFrom(${pageInfo.pages},${pageInfo.pageSize})" href="#">尾页</a>
                     </li>
                 </#if>
-                </ul>
-            </div>
-            <!-- pagehelper 分页插件 结束-->
+            </ul>
         </div>
-        <#else >
-            道歉，暂无这家公司黑企相关信息~ 如果这家公司有黑企性质 请<b><span onclick="{window.location.href='mailto:keshu@bhusk.com'}"
-                                                   style="color: orangered;cursor:pointer;">举报</span></b> ,我们会进行收录!
-        </#if>
+        <!-- pagehelper 分页插件 结束-->
+    </div>
+    <#else >
+        道歉，暂无这家公司黑企相关信息~ 如果这家公司有黑企性质 请<b><span onclick="{window.location.href='mailto:keshu@bhusk.com'}"
+                                               style="color: orangered;cursor:pointer;">举报</span></b> ,我们会进行收录!
+    </#if>
     </div>
 </div>
 
@@ -328,15 +328,13 @@
      * @param pageSize
      */
     function searchFrom(page, pageSize) {
-        var companyName = document.getElementById("search").value;
-        var position = document.getElementById("search").value;
-        if (companyName == "") {
-            companyName = "1"
+        var common = document.getElementById("search").value;
+
+        if (common == "") {
+            common = "1"
         }
-        if (position == "") {
-            position = "1"
-        }
-        window.location.href = "${request.contextPath}/index/" + page + "/" + pageSize + "/" + companyName + "/" + position+"#main";
+
+        window.location.href = "${request.contextPath}/index/" + page + "/" + pageSize + "/" + common + "#main";
     }
 
 

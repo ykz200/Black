@@ -26,6 +26,19 @@ public class CompanyInfo extends BaseEntity  {
      */
     private String enable;
 
+    /**
+     * 搜索字段
+     */
+    private String common;
+
+    public String getCommon() {
+        return common;
+    }
+
+    public void setCommon(String common) {
+        this.common = common;
+    }
+
     @Override
     public Integer getId() {
         return id;

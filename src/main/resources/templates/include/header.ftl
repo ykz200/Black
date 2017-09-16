@@ -6,8 +6,8 @@
             <nav class="header-nav">
                 <a href="#main" class="item">最新</a>
                 <a href="${request.contextPath}/notice" class="item">公告栏</a>
-                <a href="http://www.bhusk.com" class="item">博客</a>
-                <a href="#" onclick="alert('耐心等待~ 小黑正在努力带着ss飞机票来了~')" class="item">免费SS</a>
+                <a href="http://blog.bhusk.com" class="item">黑壳博客</a>
+                <#--<a href="#" onclick="alert('耐心等待~ 小黑正在努力带着ss飞机票来了~')" class="item">免费SS</a>-->
 
             </nav>
             <div class="header-user">
@@ -17,13 +17,12 @@
             </div>
             <div class="search">
                 <form action="#">
-                    <input type="text" id="search1" value="<#if userInfo.companyName??>${userInfo.companyName}</#if>"
+                    <input type="text" id="search1" value="<#if userInfo.common??>${userInfo.common}</#if>"
                            class="search-text" placeholder="搜~ 例如:xxx科技有限公司 or 苏州街23号名商大厦6层"
                            onkeydown="KeyDown(1,${pageInfo.pageSize})"
                     />
                     <a href="#" id="search-btn" class="search-btn sprite_icon"
                        onclick="{
-                               alert($('#search1').val())
                                $('#search').val($('#search1').val())
                                searchFrom(1,${pageInfo.pageSize})
                                }
@@ -39,12 +38,11 @@
         <div class="search">
             <form action="#">
                 <input type="text" id="search2" class="search-text"
-                       value="<#if userInfo.companyName??>${userInfo.companyName}</#if>"
+                       value="<#if userInfo.common??>${userInfo.common}</#if>"
                        placeholder="搜~ 例如:xxx科技有限公司 or 苏州街23号名商大厦6层" onkeydown="KeyDown(1,${pageInfo.pageSize})"
                 />
                 <a href="#" id="search-btn" class="search-btn sprite_icon"
                    onclick="{
-                           alert($('#search2').val())
                            $('#search').val($('#search2').val())
                            searchFrom(1,${pageInfo.pageSize})
                            }"></a>

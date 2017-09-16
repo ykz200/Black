@@ -72,24 +72,17 @@ public class IndexController {
      * @param companyInfo
      * @param page
      * @param row
-     * @param companyName
-     * @param position
+     * @param common
      * @return
      */
-    @RequestMapping(value = "/index/{page}/{row}/{companyName}/{position}")
+    @RequestMapping(value = "/index/{page}/{row}/{common}")
     public ModelAndView indexSearch(CompanyInfo companyInfo, @PathVariable Integer page, @PathVariable Integer row,
-                                    @PathVariable String companyName, @PathVariable String position) {
+                                    @PathVariable String common) {
 
-        if (StringUtils.isEmpty(companyName) || "1".equals(companyName)) {
-            companyInfo.setCompanyName(null);
+        if (StringUtils.isEmpty(common) || "1".equals(common)) {
+            companyInfo.setCommon(null);
         } else {
-            companyInfo.setCompanyName(companyName);
-        }
-
-        if (StringUtils.isEmpty(position) || "1".equals(position)) {
-            companyInfo.setPosition(null);
-        } else {
-            companyInfo.setPosition(position);
+            companyInfo.setCommon(common);
         }
 
         if (StringUtils.isEmpty(page)) {
