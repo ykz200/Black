@@ -30,6 +30,9 @@ public class Application extends WebMvcConfigurerAdapter {
     @RequestMapping("/")
     String home(HttpServletRequest request, HttpServletResponse response) {
         CheckMobile checkMobile = new CheckMobile();
+        /**
+         * 入口移动端和PC端 区分
+         */
         if ("mobile".equals(checkMobile.check(request, response))) {
             return "redirect:/map/index";
         } else if ("pc".equals(checkMobile.check(request, response))) {

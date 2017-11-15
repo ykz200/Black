@@ -6,8 +6,8 @@
 
   <groupId>com.bhusk.black</groupId>
   <artifactId>Black</artifactId>
-  <version>2.0.0</version>
-  <name>Black</name>
+  <version>2.0.2</version>
+  <name>BlackList</name>
   <url>http://maven.apache.org</url>
   <packaging>jar</packaging>
   <parent>

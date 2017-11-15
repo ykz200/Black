@@ -30,6 +30,11 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
         return new EmbeddedServletContainerCustomizer(){
             @Override
             public void customize(ConfigurableEmbeddedServletContainer container) {
+                /**
+                 * 设置session时间
+                 */
+                container.setSessionTimeout(0);//单位为S
+
                 container.addErrorPages(new ErrorPage(HttpStatus.BAD_REQUEST, "/error-pages/400"));
                 container.addErrorPages(new ErrorPage(HttpStatus.INTERNAL_SERVER_ERROR, "/error-pages/500"));
                 container.addErrorPages(new ErrorPage(HttpStatus.NOT_FOUND, "/error-pages/404"));
