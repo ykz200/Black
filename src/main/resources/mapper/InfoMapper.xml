@@ -51,4 +51,11 @@
         ORDER BY ID DESC
     </select>
 
+    <insert id="apiSubmitInfo" parameterType="com.bhusk.black.model.CompanyInfo"  useGeneratedKeys="true" keyProperty="id" >
+        insert into info
+        (position, companyName, remarks)
+        VALUES
+        (TRIM(#{position}),TRIM(#{companyName}),TRIM(#{remarks}));
+    </insert>
+
 </mapper>
