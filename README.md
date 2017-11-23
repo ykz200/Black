@@ -1,4 +1,4 @@
-# Black 2.0
+# Black 2.1
 
 
 网站地址：http://black.bhusk.com
@@ -33,7 +33,7 @@ templates -- 页面在文件夹下 <b>(如果觉得页面不符合你的审美�
 ```  
 写 api地址 
 
-TIP： 由于insert权限 还没有完全开发，后期可能随时更改涉及加密情况
+TIP： 由于insert权限 还没有完全开放，后期可能随时更改涉及加密情况
  
 ``` 
 例如 localhost:9090/api/apiSubmitInfo?common=北京
