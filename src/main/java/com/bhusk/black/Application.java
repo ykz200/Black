@@ -5,6 +5,7 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -20,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @EnableWebMvc
 @SpringBootApplication
 @ServletComponentScan
+@ImportResource(locations={"classpath:mykaptcha.xml"})
 @MapperScan(basePackages = "com.bhusk.black.mapper")
 public class Application extends WebMvcConfigurerAdapter {
 

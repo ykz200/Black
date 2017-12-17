@@ -40,6 +40,7 @@ public class NoticeController {
         result = CommonPage(result);
         List<Notice> noticeAll = noticeService.getNoticeAll(notice);
         result.addObject("pageInfo", new PageInfo<Notice>(noticeAll));
+//        result.addObject("iframeUrl","notice");
         return result;
     }
 

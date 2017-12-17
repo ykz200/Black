@@ -31,6 +31,16 @@ public class CompanyInfo extends BaseEntity  {
      */
     private String common;
 
+    private String email;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getCommon() {
         return common;
     }

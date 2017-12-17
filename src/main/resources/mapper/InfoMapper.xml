@@ -53,9 +53,9 @@
 
     <insert id="apiSubmitInfo" parameterType="com.bhusk.black.model.CompanyInfo"  useGeneratedKeys="true" keyProperty="id" >
         insert into info
-        (position, companyName, remarks)
+        (position, companyName, remarks,enable,email)
         VALUES
-        (TRIM(#{position}),TRIM(#{companyName}),TRIM(#{remarks}));
+        (TRIM(#{position}),TRIM(#{companyName}),TRIM(#{remarks}),'N',TRIM(#{email}));
     </insert>
 
 </mapper>

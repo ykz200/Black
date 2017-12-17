@@ -2,16 +2,21 @@
     <div class="header-bg"></div>
     <div class="header-top">
         <div class="container">
-            <a href="#" class="header-logo"></a>
+            <a href="${request.contextPath}/index" class="header-logo"></a>
             <nav class="header-nav">
-                <a href="#main" class="item">最新</a>
-                <a href="${request.contextPath}/notice" class="item">公告栏</a>
+                <a href="#main"
+                   onclick="{iframeContent.setAttribute('src', '${request.contextPath}/content/content')}"
+                   class="item">最新</a>
+                <a href="#main"
+                   onclick="{iframeContent.setAttribute('src', '${request.contextPath}/notice')}"
+                   class="item">公告栏</a>
+
                 <a href="http://blog.bhusk.com" class="item">黑壳博客</a>
                 <#--<a href="#" onclick="alert('耐心等待~ 小黑正在努力带着ss飞机票来了~')" class="item">免费SS</a>-->
 
             </nav>
             <div class="header-user">
-                <a href="#" onclick="{window.location.href='mailto:keshu@bhusk.com'}" class="register">举报</a>
+                <a href="#main" onclick="{iframeContent.setAttribute('src', '${request.contextPath}/addCompany')}"  class="register">举报</a>
             <#--<a href="#" class="register">注册</a>-->
             <#--<a href="#" class="login">登录</a>-->
             </div>
@@ -19,12 +24,11 @@
                 <form action="#">
                     <input type="text" id="search1" value="<#if userInfo.common??>${userInfo.common}</#if>"
                            class="search-text" placeholder="搜~ 例如:xxx科技有限公司 or 苏州街23号名商大厦6层"
-                           onkeydown="KeyDown(1,${pageInfo.pageSize})"
                     />
-                    <a href="#" id="search-btn" class="search-btn sprite_icon"
+                    <a href="#main" id="search-btn" class="search-btn sprite_icon"
                        onclick="{
-                               $('#search').val($('#search1').val())
-                               searchFrom(1,${pageInfo.pageSize})
+                                    $('#search').val($('#search1').val())
+                                    searchFrom(1,${rows})
                                }
                                "></a>
                 </form>
@@ -44,7 +48,7 @@
                 <a href="#" id="search-btn" class="search-btn sprite_icon"
                    onclick="{
                            $('#search').val($('#search2').val())
-                           searchFrom(1,${pageInfo.pageSize})
+                           searchFrom(1,${rows})
                            }"></a>
             </form>
         </div>

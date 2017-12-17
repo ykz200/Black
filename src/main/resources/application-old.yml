@@ -1,5 +1,5 @@
 server:
-    port: 9090
+    port: 9091
     context-path: #/balcklist/
 
 logging:
@@ -7,12 +7,12 @@ logging:
         tk.mybatis: TRACE
 
 druid:
-    url: jdbc:mysql://103.45.8.122:3306/Black?useUnicode=true&characterEncoding=utf-8
-    username: black
-    password: blacklist
+    url: jdbc:mysql://localhost:3306/blacklist?useUnicode=true&characterEncoding=utf-8
+    username:
+    password:
     initial-size: 1
     min-idle: 1
-    max-active: 20
+    max-active: 120
     test-on-borrow: true
 
 spring:
@@ -40,3 +40,13 @@ pagehelper:
     reasonable: true
     supportMethodsArguments: true
     params: count=countSql
+
+spring:
+    mail:
+        host: mail.qiye.aliyun.com
+        username: black@bhusk.com
+        password: password
+        default-encoding: UTF-8
+        properties.mail.smtp.auth: true
+        properties.mail.smtp.starttls.enable: false
+        properties.mail.smtp.starttls.required: false

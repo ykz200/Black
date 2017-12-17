@@ -5,8 +5,10 @@ import com.bhusk.black.model.MapCompanyInfo;
 import com.bhusk.black.model.Page;
 import com.bhusk.black.service.InfoService;
 import com.bhusk.black.service.PageService;
+import com.bhusk.black.util.CommonPageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,7 +23,7 @@ import java.util.List;
  */
 @Controller
 @RequestMapping("/map")
-public class MapIndexController {
+public class MapIndexController extends CommonPageUtils {
 
     @Autowired
     private InfoService infoService;
@@ -34,7 +36,7 @@ public class MapIndexController {
      * @return
      */
     @RequestMapping(value = "/index")
-    public ModelAndView mapIndex(CompanyInfo companyInfo) {
+    public String mapIndex(CompanyInfo companyInfo,Model model) {
 
         if (StringUtils.isEmpty(companyInfo.getCompanyName())) {
             companyInfo.setCompanyName(null);
@@ -44,17 +46,18 @@ public class MapIndexController {
             companyInfo.setPosition(null);
         }
 
-        ModelAndView result = new ModelAndView("map/index");
+//        ModelAndView result = new ModelAndView("map/index");
 
         /**
          * 调用共同的配置信息
          */
-        result = this.CommonPage(result);
+//        result = this.CommonPage(result);
+        model = super.mapCommonPage(model);
         List<MapCompanyInfo> companyInfoList = new ArrayList<MapCompanyInfo>();
-        result.addObject("pageInfo", companyInfoList);
-        result.addObject("userInfo", companyInfo);
+        model.addAttribute("pageInfo", companyInfoList);
+        model.addAttribute("userInfo", companyInfo);
 
-        return result;
+        return "map/index";
     }
 
     /**
@@ -65,7 +68,7 @@ public class MapIndexController {
      * @return
      */
     @RequestMapping(value = "/index/{common}")
-    public ModelAndView mapIndexSearch(MapCompanyInfo mapCompanyInfo, @PathVariable String common) {
+    public String mapIndexSearch(MapCompanyInfo mapCompanyInfo, @PathVariable String common,Model model) {
 
         if (StringUtils.isEmpty(common)) {
             mapCompanyInfo.setCommon(null);
@@ -73,15 +76,15 @@ public class MapIndexController {
             mapCompanyInfo.setCommon(common);
         }
 
-        ModelAndView result = new ModelAndView("map/index");
+//        ModelAndView result = new ModelAndView("map/index");
         /**
          * 调用共同的配置信息
          */
-        result = this.CommonPage(result);
+        model = super.mapCommonPage(model);
         List<CompanyInfo> companyInfoList = infoService.mapIndexSearch(mapCompanyInfo);
-        result.addObject("pageInfo", (companyInfoList.size() != 0) ? companyInfoList: null);
-        result.addObject("common", common);
-        return result;
+        model.addAttribute("pageInfo", (companyInfoList.size() != 0) ? companyInfoList: null);
+        model.addAttribute("common", common);
+        return "map/index";
     }
 
     /**
@@ -137,7 +140,6 @@ public class MapIndexController {
 
 
         return result;
-
     }
 
 }

@@ -1,0 +1,212 @@
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+    20% {
+        transform: rotate(116deg);
+    }
+    40% {
+        transform: rotate(60deg);
+    }
+    60% {
+        transform: rotate(98deg);
+    }
+    80% {
+        transform: rotate(76deg);
+    }
+    100% {
+        transform: rotate(82deg);
+    }
+}
+
+div.row:nth-child(1) input {
+    border-radius: 0;
+    border-width: 1px 0;
+}
+
+div.row:nth-child(1) input + span {
+    background: transparent;
+}
+
+div.row:nth-child(1) input:focus + span,
+div.row:nth-child(1) input:active + span {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    border-width: 0 0 0 1px;
+    animation: halfLeft .6s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes halfLeft {
+    20% {
+        transform: translateX(-60%);
+    }
+    40% {
+        transform: translateX(-42%);
+    }
+    60% {
+        transform: translateX(-56%);
+    }
+    80% {
+        transform: translateX(-46%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes borderAnim {
+    25% {
+        border-top-color: rgba(255, 255, 255, 0);
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: rgba(255, 255, 255, 0);
+    }
+    50% {
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: rgba(255, 255, 255, 0);
+    }
+    75% {
+        border-top-color: white;
+        border-right-color: white;
+        border-bottom-color: white;
+        border-left-color: white;
+    }
+}
+
+@keyframes shadowGo {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -600% 0%;
+    }
+}
+
+table {
+    border: 1px solid #ccc;
+    /*width: 80%;*/
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+}
+
+table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+
+    table {
+        border: 0;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tr {
+        margin-bottom: 10px;
+        display: block;
+        border-bottom: 2px solid #ddd;
+    }
+
+    table td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    table td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.note {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+ul.pagination li a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+@font-face {
+    font-family: 'webfont';
+    src: url('webfont.eot'); /* IE9*/
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('webfont.woff') format('woff'), /* chrome、firefox */ url('webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+
+.web-font {
+    font-family: "webfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+div .a {
+    float: left;
+}

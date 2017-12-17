@@ -8,7 +8,9 @@ import com.bhusk.black.model.StatusBean;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -30,6 +32,7 @@ public class InfoService {
         if (info.getPage() != null && info.getRows() != null) {
             PageHelper.startPage(info.getPage(), info.getRows());
         }
+        
         return infoMapper.getAll(info);
     }
 
@@ -70,10 +73,10 @@ public class InfoService {
          */
         if (0 < count) {
             statusBean.setStatus(true);
-            statusBean.setMessage("Perfect submission ！");
+            statusBean.setMessage("信息会尽快审核！Perfect submission!");
         } else {
             statusBean.setStatus(false);
-            statusBean.setMessage("Failure is the mother of success ！");
+            statusBean.setMessage("信息如果多次提示本次消息，请手动发送邮件至keshu@bhusk.com，会手动进行审核! Failure is the mother of success ！");
         }
 
         return statusBean;

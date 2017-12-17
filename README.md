@@ -15,6 +15,15 @@ templates -- 页面在文件夹下 <b>(如果觉得页面不符合你的审美�
 黑壳交流群-我们是小团体,欢迎入驻 -->
 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c5cff851a52c6194913e0e2df8e21d692ea4f1727b1cf8efa67b6bc7ff372d9e"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="黑壳网络" title="黑壳网络"></a>
 
+2.2.1 IT黑名单页面申请收录黑公司功能
+
+```
+1、首先修复了分页bug
+2、然后再代码做了一些调整，利于搜索速度的提升
+3、增加了页面添加了申请收录功能
+4、添加了springboot sendEamil
+```
+
 2.1开放Api 用于读写
 读 项目地址 
 
