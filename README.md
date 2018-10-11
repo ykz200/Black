@@ -1,5 +1,5 @@
 # Black 2.1
-因特殊情况，代码将停止同步GitHub，本项目用于收集issue，感谢各位亲友star本项目. 欢迎各位加入黑壳交流群-我们的小团体,欢迎入驻 
+因特殊情况，代码将停止同步GitHub，本项目用于issue记录，感谢各位亲友star本项目. 欢迎各位加入黑壳交流群-我们的小团体,欢迎入驻 
 
 <br/>
 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=c5cff851a52c6194913e0e2df8e21d692ea4f1727b1cf8efa67b6bc7ff372d9e"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="黑壳网络" title="黑壳网络"></a>
