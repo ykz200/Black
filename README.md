@@ -20,7 +20,8 @@
 壳壳家根据地-我们是小团体,欢迎入驻 群号:200408242
 
 微信群 请扫下方二维码备注 壳壳家 
-![https://raw.githubusercontent.com/ykz200/Black/master/WECHAT.JPG](https://raw.githubusercontent.com/ykz200/Black/master/WECHAT.JPG)
+
+<img src="https://raw.githubusercontent.com/ykz200/Black/master/WECHAT.JPG" width = "300" height = "400" alt="图片名称" align=center />
 
 最后非常感谢来自各路的家人们，欢迎你们提供的数据，让更多的人防踩雷。
 
